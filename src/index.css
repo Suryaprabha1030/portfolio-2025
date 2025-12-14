@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #0d0f1a;
+  background-image: radial-gradient(
+      circle at 25% 25%,
+      rgba(129, 14, 255, 0.25),
+      transparent 60%
+    ),
+    radial-gradient(circle at 80% 40%, rgba(255, 0, 153, 0.2), transparent 70%),
+    radial-gradient(circle at 55% 95%, rgba(0, 140, 255, 0.2), transparent 70%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("https://grainy-gradients.vercel.app/noise.png");
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+/* @keyframes glowBall {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(130%);
+    opacity: 0;
+  }
+} */
+
+@keyframes lineFlow {
+  0% {
+    transform: translateY(0);
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes glowBall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes ringSweep {
+  0% {
+    transform: scale(0.7);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
