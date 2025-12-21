@@ -61,7 +61,10 @@ const App = () => {
           <Intro />
         </section>
 
-        <section id="skills" className="w-full flex flex-col items-center ">
+        <section
+          id="skills"
+          className="w-full flex flex-col items-center xl:mt-[rem]"
+        >
           <Skills />
         </section>
         <section id="project" className="w-full flex flex-col items-center ">

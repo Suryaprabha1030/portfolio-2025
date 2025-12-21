@@ -50,9 +50,11 @@
 "use client";
 
 import { useState } from "react";
+import menuIcon from "./menu.svg";
 
 export default function Navbar() {
   const [active, setActive] = useState("about");
+  const [navOpen, setNavOpen] = useState(false);
 
   const menuItems = [
     { id: "about", label: "About" },
@@ -63,10 +65,29 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="w-full backdrop-blur-sm bg-black/30 font-semibold flex flex-row justify-between items-center shadow rounded px-10 py-3">
-      <h1 className="text-2xl">surya chandrasekar</h1>
-
-      <ul className="flex flex-row gap-5 text-md">
+    <div className="w-full backdrop-blur-sm bg-black/30 font-semibold flex flex-row justify-between items-center shadow lg:rounded-b-xl px-10 py-3">
+      <h1 className="text-2xl">Surya chandrasekar</h1>
+      <img
+        src={menuIcon}
+        className="w-5 h-5 xl:hidden"
+        onClick={() => setNavOpen(!navOpen)}
+      />
+      <ul
+        className={`lg:flex md:flex-row flex-col md:max-lg:justify-center md:max-lg:gap-7  md:max-lg:items-center
+    max-lg:absolute max-lg:top-14 max-lg:py-10 max-lg:text-lg max-lg:right-0 max-lg:rounded-b-lg
+    max-lg:px-10 max-lg:bg-gradient-to-r
+    from-[#333399] to-[#ff00cc]
+    z-10 max-lg:w-full gap-5 text-md
+    ${navOpen ? "flex" : "hidden"} lg:flex
+  `}
+      >
+        {/* <ul
+        className={`flex lg:flex-row flex-col max-lg:absolute max-lg:top-14 max-lg:right-0 max-lg:px-10 max-lg:bg-gradient-to-r 
+    from-[#333399] 
+    to-[#ff00cc] z-10 max-lg:w-full gap-5 text-md ${
+      navOpen ? "max-lg:block" : "max-lg:hidden lg:block"
+    }`}
+      > */}
         {menuItems.map((item) => (
           <li key={item.id}>
             <a
@@ -74,7 +95,7 @@ export default function Navbar() {
               onClick={() => setActive(item.id)}
               className={
                 active === item.id
-                  ? "bg-gradient-to-r from-blue-500 to-blue-800  bg-clip-text text-transparent"
+                  ? "lg:bg-gradient-to-r from-blue-500 to-blue-800  bg-clip-text text-transparent max-lg:bg-black"
                   : "text-white"
               }
             >

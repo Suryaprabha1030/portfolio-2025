@@ -59,17 +59,17 @@ const Experience = () => {
                 user experiences.
               </p>
 
-              <div className="flex gap-2">
-                <span className="px-3 py-1 text-xs rounded-full bg-blue-900/40 text-blue-300 border border-blue-700/40">
+              <div className="flex flex-wrap max-md:flex- text-center md:max-md:gap-5  gap-2">
+                <span className="px-3 max-md:px-2 py-1 text-xs rounded-full bg-blue-900/40 text-blue-300 border border-blue-700/40">
                   React
                 </span>
-                <span className="px-3 py-1 text-xs rounded-full bg-blue-900/40 text-blue-300 border border-blue-700/40">
+                <span className="px-3  max-md:px-2  py-1 text-xs rounded-full bg-blue-900/40 text-blue-300 border border-blue-700/40">
                   TypeScript
                 </span>
-                <span className="px-3 py-1 text-xs rounded-full bg-blue-900/40 text-blue-300 border border-blue-700/40">
+                <span className="px-3 max-md:px-2  py-1 text-xs rounded-full bg-blue-900/40 text-blue-300 border border-blue-700/40">
                   Next.js
                 </span>
-                <span className="px-3 py-1 text-xs rounded-full bg-blue-900/40 text-blue-300 border border-blue-700/40">
+                <span className="px-3 max-md:px-2  py-1 text-xs rounded-full bg-blue-900/40 text-blue-300 border border-blue-700/40">
                   Tailwind
                 </span>
                 <span className="px-3 py-1 text-xs rounded-full bg-blue-900/40 text-blue-300 border border-blue-700/40">
@@ -105,7 +105,7 @@ const Experience = () => {
 
           <div className="w-1/2"></div>
 
-          <div className="w-1/2 pl-10">
+          <div className="w-1/2 pl-10 md:max-lg:mr-5">
             <div className="bg-black/20 backdrop-blur-lg  p-6 rounded-xl">
               <p className="text-purple-300 text-sm font-medium mb-2">
                 2025 APR - Present
@@ -113,25 +113,25 @@ const Experience = () => {
               <h2 className="text-white text-xl font-semibold mb-2">
                 Senior Frontend Developer
               </h2>
-              <p className="text-gray-400 text-sm mb-4">
+              <p className="text-gray-300 text-sm mb-4">
                 Leading the development of scalable UI, mentoring junior
                 developers, and driving adoption of modern frontend practices.
               </p>
 
-              <div className="flex gap-2">
-                <span className="px-3 py-1 text-xs rounded-full bg-blue-900/40 text-blue-300 border border-blue-700/40">
+              <div className="flex gap-2 flex-wrap">
+                <span className="px-3  max-md:px-2  py-1 text-xs rounded-full bg-blue-900/40 text-blue-300 border border-blue-700/40">
                   React
                 </span>
-                <span className="px-3 py-1 text-xs rounded-full bg-blue-900/40 text-blue-300 border border-blue-700/40">
+                <span className="px-3 max-md:px-2  py-1 text-xs rounded-full bg-blue-900/40 text-blue-300 border border-blue-700/40">
                   TypeScript
                 </span>
-                <span className="px-3 py-1 text-xs rounded-full bg-blue-900/40 text-blue-300 border border-blue-700/40">
+                <span className="px-3 max-md:px-2  py-1 text-xs rounded-full bg-blue-900/40 text-blue-300 border border-blue-700/40">
                   Next.js
                 </span>
-                <span className="px-3 py-1 text-xs rounded-full bg-blue-900/40 text-blue-300 border border-blue-700/40">
+                <span className="px-3 max-md:px-2  py-1 text-xs rounded-full bg-blue-900/40 text-blue-300 border border-blue-700/40">
                   Tailwind
                 </span>
-                <span className="px-3 py-1 text-xs rounded-full bg-blue-900/40 text-blue-300 border border-blue-700/40">
+                <span className="px-3 max-md:px-2  py-1 text-xs rounded-full bg-blue-900/40 text-blue-300 border border-blue-700/40">
                   Redux
                 </span>
               </div>

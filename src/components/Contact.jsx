@@ -46,19 +46,19 @@ const Contact = () => {
       >
         Let&apos;s Connect
       </h1>
-      <p className="text-xl mb-10">
+      <p className="text-xl max-md:text-[1rem] mb-10">
         Let&apos;s build something amazing together — send me a message.
       </p>
       {status && (
         <p className="text-center text-sm text-white/80 mt-4">{status}</p>
       )}
-      <form ref={formRef} onSubmit={sendEmail} className="w-1/2">
-        <div className="backdrop-blur-sm bg-black/30 flex flex-col gap-5 items-center justify-center rounded-lg w-full py-5">
+      <form ref={formRef} onSubmit={sendEmail} className="w-1/2 max-lg:w-3/4">
+        <div className="backdrop-blur-sm bg-black/30 flex flex-col gap-5 items-center justify-center rounded-lg w-full py-10">
           {/* Hidden recipient fields */}{" "}
           <input type="text" name="recipient_name" defaultValue="" hidden />
           <input type="email" name="recipient_email" defaultValue="" hidden />
-          <div className="flex flex-row gap-10 w-3/4">
-            <span className="flex flex-col w-1/2">
+          <div className="flex flex-row max-lg:flex-col  gap-10 w-5/6">
+            <span className="flex flex-col w-1/2 max-lg:w-full">
               {" "}
               <label>Your Name</label>
               <input
@@ -69,7 +69,7 @@ const Contact = () => {
                 required
               />{" "}
             </span>
-            <span className="flex flex-col w-1/2">
+            <span className="flex flex-col w-1/2 max-lg:w-full">
               {" "}
               <label>Your Email</label>{" "}
               <input
@@ -81,7 +81,7 @@ const Contact = () => {
               />{" "}
             </span>{" "}
           </div>
-          <span className="flex flex-col w-3/4">
+          <span className="flex flex-col  w-5/6">
             {" "}
             <label>Message</label>{" "}
             <textarea
@@ -93,7 +93,7 @@ const Contact = () => {
           </span>
           <button
             type="submit"
-            className="w-3/4 py-2 rounded-lg flex justify-center items-center gap-3 bg-gradient-to-r from-purple-500 to-blue-800 shadow-lg hover:scale-105 transition"
+            className=" w-5/6 py-2 rounded-lg flex justify-center items-center gap-3 bg-gradient-to-r from-purple-500 to-blue-800 shadow-lg hover:scale-105 transition"
           >
             {" "}
             <span className="text-xl font-[450]">Send Message</span>{" "}
@@ -118,3 +118,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
+// mongodb+srv://suryachandrasekar10_db_user:<db_password>@cluster0.s9la2x1.mongodb.net/?appName=Cluster0
+
+// rkzmEgUKtDQETPyn
