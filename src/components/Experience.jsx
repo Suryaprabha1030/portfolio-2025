@@ -2,15 +2,17 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <div className="w-full min-h-screen  flex flex-col items-center py-20 px-4">
-      <h1 className="text-white text-5xl font-semibold mb-20">My Journey</h1>
+    <div className="w-full sm:min-h-screen  flex flex-col max-sm:gap-5 items-center sm:py-20 max-sm:pt-15 px-4 max-sm:px-6">
+      <h1 className="text-white text-5xl max-sm:text-xl font-semibold sm:mb-20">
+        My Journey
+      </h1>
 
       <div className="relative w-full h-full max-w-5xl">
         {/* Vertical Line */}
-        <div className="absolute left-1/2 top-0 h-full w-[2px] bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 -translate-x-1/2">
+        <div className="absolute left-1/2 top-0 h-full  max-sm:hidden w-[2px] bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500 -translate-x-1/2">
           <div
             className="absolute left-0 w-full h-[68%]
-      bg-gradient-to-b from-white/40 to-transparent
+      bg-gradient-to-b from-white/40 to-transparent  max-sm:hidden
       animate-[lineFlow_5s_linear_infinite]"
           ></div>
 
@@ -23,32 +25,32 @@ const Experience = () => {
         </div>
 
         {/* --- 1: Experience Card (Left) --- */}
-        <div className="relative flex items-center mb-28">
+        <div className="relative flex items-center sm:mb-28 max-sm:mb-8">
           {/* Line Adjust for dot */}
           {/* <div className="absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-black border-2 border-blue-400 flex items-center justify-center">
             <div className="w-2 h-2 rounded-full bg-blue-400 shadow-[0_0_12px_#3b82f6]"></div>
           </div> */}
 
-          <div className="absolute left-1/2 -translate-x-1/2 w-7 h-7 rounded-full bg-black border-2 border-blue-400 flex items-center justify-center relative overflow-visible">
+          <div className="absolute left-1/2 -translate-x-1/2 w-7 h-7  max-sm:hidden rounded-full bg-black border-2 border-blue-400 flex items-center justify-center relative overflow-visible">
             {/* Inner glowing ball */}
             <div
-              className="w-3 h-3 rounded-full bg-blue-400 shadow-[0_0_12px_#3b82f6]
+              className="w-3 h-3 rounded-full bg-blue-400 shadow-[0_0_12px_#3b82f6]  max-sm:hidden
        animate-pulse"
             ></div>
 
             {/* Outer expanding glow ring */}
             <div
               className="absolute inset-0 w-full h-full rounded-full border border-blue-400/60 
-       animate-[ringSweep_2s_ease-out_infinite]"
+       animate-[ringSweep_2s_ease-out_infinite]  max-sm:hidden"
             ></div>
           </div>
 
-          <div className="w-1/2 pr-17">
+          <div className="w-1/2 sm:pr-17 max-sm:w-full">
             <div className="bg-black/20 backdrop-blur-lg  p-6 rounded-xl">
               <p className="text-[#5ea0ff] text-sm font-medium mb-2">
                 2024 APR - 2025 APR
               </p>
-              <h2 className="text-white text-xl font-semibold mb-2">
+              <h2 className="text-white text-xl max-sm:text-lg font-semibold mb-2">
                 Frontend Developer
               </h2>
               <p className="text-gray-300 text-sm mb-4">
@@ -79,38 +81,38 @@ const Experience = () => {
             </div>
           </div>
 
-          <div className="w-1/2"></div>
+          <div className="w-1/2  max-sm:hidden"></div>
         </div>
 
         {/* --- 2: Education Card (Right) --- */}
-        <div className="relative flex items-center mb-28">
+        <div className="relative flex items-center sm:mb-28">
           {/* Timeline Dot */}
           {/* <div className="absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-[#0e0f25] border-2 border-purple-400 flex items-center justify-center">
             <div className="w-2 h-2 rounded-full bg-purple-400 shadow-[0_0_12px_purple]"></div>
           </div> */}
 
-          <div className="absolute left-1/2 -translate-x-1/2 w-7 h-7 rounded-full bg-black border-2 border-blue-400 flex items-center justify-center relative overflow-visible">
+          <div className="absolute left-1/2  max-sm:hidden -translate-x-1/2 w-7 h-7 rounded-full bg-black border-2 border-blue-400 flex items-center justify-center relative overflow-visible">
             {/* Inner glowing ball */}
             <div
-              className="w-3 h-3 rounded-full bg-blue-400 shadow-[0_0_12px_#3b82f6]
+              className="w-3 h-3 rounded-full bg-blue-400 shadow-[0_0_12px_#3b82f6]  max-sm:hidden
        animate-pulse"
             ></div>
 
             {/* Outer expanding glow ring */}
             <div
               className="absolute inset-0 w-full h-full rounded-full border border-blue-400/60 
-       animate-[ringSweep_2s_ease-out_infinite]"
+       animate-[ringSweep_2s_ease-out_infinite]  max-sm:hidden"
             ></div>
           </div>
 
-          <div className="w-1/2"></div>
+          <div className="w-1/2  max-sm:hidden"></div>
 
-          <div className="w-1/2 pl-10 md:max-lg:mr-5">
+          <div className="w-1/2 sm:pl-10 max-sm:w-full md:max-lg:mr-5">
             <div className="bg-black/20 backdrop-blur-lg  p-6 rounded-xl">
               <p className="text-purple-300 text-sm font-medium mb-2">
                 2025 APR - Present
               </p>
-              <h2 className="text-white text-xl font-semibold mb-2">
+              <h2 className="text-white text-xl font-semibold mb-2 max-sm:text-lg">
                 Senior Frontend Developer
               </h2>
               <p className="text-gray-300 text-sm mb-4">

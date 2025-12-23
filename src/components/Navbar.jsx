@@ -65,19 +65,19 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="w-full backdrop-blur-sm bg-black/30 font-semibold flex flex-row justify-between items-center shadow lg:rounded-b-xl px-10 py-3">
-      <h1 className="text-2xl">Surya chandrasekar</h1>
+    <div className="w-full backdrop-blur-sm bg-black/30 font-semibold flex flex-row justify-between items-center shadow lg:rounded-b-xl max-sm:px-3 px-10 py-3">
+      <h1 className="text-2xl max-sm:text-xl">Surya chandrasekar</h1>
       <img
         src={menuIcon}
-        className="w-5 h-5 xl:hidden"
+        className="w-5 h-5 max-xl:flex xl:hidden"
         onClick={() => setNavOpen(!navOpen)}
       />
       <ul
         className={`lg:flex md:flex-row flex-col md:max-lg:justify-center md:max-lg:gap-7  md:max-lg:items-center
-    max-lg:absolute max-lg:top-14 max-lg:py-10 max-lg:text-lg max-lg:right-0 max-lg:rounded-b-lg
+    max-lg:absolute max-lg:top-14 max-sm:top-12 max-lg:py-10 max-lg:text-lg max-lg:right-0 max-lg:rounded-b-lg
     max-lg:px-10 max-lg:bg-gradient-to-r
     from-[#333399] to-[#ff00cc]
-    z-10 max-lg:w-full gap-5 text-md
+    z-10 max-lg:w-full gap-5 text-md max-sm:text-[1rem]
     ${navOpen ? "flex" : "hidden"} lg:flex
   `}
       >

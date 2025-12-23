@@ -32,7 +32,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full flex flex-col justify-center items-center py-20 ">
+    <div className="w-full flex flex-col justify-center items-center sm:py-20 max-sm:pt-15 ">
       <h1
         className="
       text-5xl font-semibold text-white 
@@ -42,11 +42,11 @@ const Contact = () => {
       after:absolute after:inset-0
       after:-z-10
       after:blur-2xl
-      after:bg-[radial-gradient(circle,rgba(150,80,255,0.6)_0%,transparent_70%)] mb-2"
+      after:bg-[radial-gradient(circle,rgba(150,80,255,0.6)_0%,transparent_70%)] mb-2 py-4 2xl:py-2 max-sm:text-xl"
       >
         Let&apos;s Connect
       </h1>
-      <p className="text-xl max-md:text-[1rem] mb-10">
+      <p className="text-xl max-md:text-[1rem] mb-10 max-sm:text-[0.8rem]">
         Let&apos;s build something amazing together — send me a message.
       </p>
       {status && (
@@ -60,22 +60,22 @@ const Contact = () => {
           <div className="flex flex-row max-lg:flex-col  gap-10 w-5/6">
             <span className="flex flex-col w-1/2 max-lg:w-full">
               {" "}
-              <label>Your Name</label>
+              <label className="max-sm:text-[0.85rem]">Your Name</label>
               <input
                 type="text"
                 name="user_name"
-                className="bg-gray-100/20 backdrop-blur-sm rounded-lg px-4 w-full py-2"
+                className="bg-gray-100/20 backdrop-blur-sm rounded-lg px-4 w-full py-2 max-sm:text-[0.85rem]"
                 placeholder="Enter Your Name"
                 required
               />{" "}
             </span>
             <span className="flex flex-col w-1/2 max-lg:w-full">
               {" "}
-              <label>Your Email</label>{" "}
+              <label className="max-sm:text-[0.85rem]">Your Email</label>{" "}
               <input
                 type="email"
                 name="user_email"
-                className="bg-gray-100/20 backdrop-blur-sm rounded-lg px-4 w-full py-2"
+                className="bg-gray-100/20 backdrop-blur-sm rounded-lg px-4 w-full py-2  max-sm:text-[0.85rem]"
                 placeholder="Enter Your Email"
                 required
               />{" "}
@@ -83,10 +83,10 @@ const Contact = () => {
           </div>
           <span className="flex flex-col  w-5/6">
             {" "}
-            <label>Message</label>{" "}
+            <label className="max-sm:text-[0.85rem]">Message</label>{" "}
             <textarea
               name="message"
-              className="bg-gray-100/20 backdrop-blur-sm rounded-lg px-4 w-full h-50 py-2"
+              className="bg-gray-100/20 backdrop-blur-sm rounded-lg px-4 w-full h-50 py-2 max-sm:text-[0.85rem]"
               placeholder="Enter your message"
               required
             />{" "}
@@ -96,7 +96,9 @@ const Contact = () => {
             className=" w-5/6 py-2 rounded-lg flex justify-center items-center gap-3 bg-gradient-to-r from-purple-500 to-blue-800 shadow-lg hover:scale-105 transition"
           >
             {" "}
-            <span className="text-xl font-[450]">Send Message</span>{" "}
+            <span className="text-xl font-[450] max-sm:text-[0.85rem]">
+              Send Message
+            </span>{" "}
           </button>{" "}
         </div>{" "}
       </form>

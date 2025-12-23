@@ -5,6 +5,7 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Project from "./components/Project";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -53,7 +54,7 @@ const App = () => {
 
       {/* Content */}
       <div className="relative z-10 w-full flex flex-col justify-center items-center">
-        <div className="fixed top-0 w-3/4 z-1000">
+        <div className="fixed top-0 w-3/4 max-sm:w-full z-1000">
           <Navbar />
         </div>
 
@@ -76,6 +77,7 @@ const App = () => {
         <section id="contact" className="w-full flex flex-col items-center ">
           <Contact />
         </section>
+        <Footer />
       </div>
     </div>
   );
