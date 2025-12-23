@@ -3,11 +3,11 @@ import { skills } from "../skill";
 
 const Skills = () => {
   return (
-    <div className="w-3/4 max-sm:w-full md:h-[90vh] text-white flex flex-col items-center justify-center px-10 max-sm:px-6 sm:py-20 max-sm:pt-15 md:max-2xl:mt-[10rem] 2xl:mt-30">
+    <div className="w-3/4 max-sm:w-full md:h-[90vh] text-white flex flex-col items-center justify-center px-10  max-sm:px-2 sm:py-20 max-sm:pt-15 md:max-2xl:mt-[10rem] 2xl:mt-30">
       <h1 className="text-4xl max-md:text-3xl max-sm:text-xl font-semibold mb-2">
-        My ToolKit
+        My Toolkit
       </h1>
-      <p className="text-xl text-center max-md:text-[1.1rem] max-md:mb-10 mb-20 max-sm:text-[0.8rem]">
+      <p className="text-xl text-center max-md:text-[1.1rem] max-md:mb-10 max-sm:mb-10 mb-20 max-sm:text-[0.8rem]">
         Technologies I work with daily to craft seamless and efficient user
         experiences.
       </p>
@@ -17,7 +17,7 @@ const Skills = () => {
           return (
             <div
               key={skill.name}
-              className="flex flex-col items-center justify-center w-40 sm:max-xl:w-25 sm:max-xl:h-25 h-40 max-sm:h-20 max-sm:w-20
+              className="flex flex-col items-center justify-center w-40 sm:max-xl:w-25 sm:max-xl:h-25 h-40 max-sm:h-25 max-sm:w-25
               bg-black/30 backdrop-blur-lg rounded-xl 
               hover:scale-105 transition duration-300"
             >

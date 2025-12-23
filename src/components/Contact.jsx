@@ -32,7 +32,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full flex flex-col justify-center items-center sm:py-20 max-sm:pt-15 ">
+    <div className="w-full flex flex-col justify-center items-center sm:py-20 max-sm:pt-15  max-sm:px-6">
       <h1
         className="
       text-5xl font-semibold text-white 
@@ -42,17 +42,21 @@ const Contact = () => {
       after:absolute after:inset-0
       after:-z-10
       after:blur-2xl
-      after:bg-[radial-gradient(circle,rgba(150,80,255,0.6)_0%,transparent_70%)] mb-2 py-4 2xl:py-2 max-sm:text-xl"
+      after:bg-[radial-gradient(circle,rgba(150,80,255,0.6)_0%,transparent_70%)] mb-2 sm:py-4  2xl:py-2 max-sm:text-xl"
       >
         Let&apos;s Connect
       </h1>
-      <p className="text-xl max-md:text-[1rem] mb-10 max-sm:text-[0.8rem]">
+      <p className="text-xl max-md:text-[1rem] mb-10 text-center max-sm:text-[0.8rem]">
         Let&apos;s build something amazing together — send me a message.
       </p>
       {status && (
         <p className="text-center text-sm text-white/80 mt-4">{status}</p>
       )}
-      <form ref={formRef} onSubmit={sendEmail} className="w-1/2 max-lg:w-3/4">
+      <form
+        ref={formRef}
+        onSubmit={sendEmail}
+        className="w-1/2 max-lg:w-3/4 max-sm:w-full"
+      >
         <div className="backdrop-blur-sm bg-black/30 flex flex-col gap-5 items-center justify-center rounded-lg w-full py-10">
           {/* Hidden recipient fields */}{" "}
           <input type="text" name="recipient_name" defaultValue="" hidden />
@@ -103,7 +107,7 @@ const Contact = () => {
         </div>{" "}
       </form>
 
-      <div className="flex gap-5 text-white text-3xl mt-10">
+      <div className="flex gap-5 text-white text-3xl mt-5">
         <a
           href="https://www.linkedin.com/in/surya-chandrasekar-b53670298/"
           target="_blank"

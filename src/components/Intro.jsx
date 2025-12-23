@@ -5,10 +5,10 @@ const Intro = () => {
   return (
     <section className="w-full md:h-[100vh] text-white  flex flex-col items-center justify-center max-sm:px-3 px-6 sm:py-20 max-sm:pt-15">
       {/* Introducing Path AI */}
-      <p className=" text-5xl max-lg:text-4xl max-md:text-3xl max-sm:text-xl font-semibold max-md:mb-2 mb-4 max-sm:mb-1">
-        Surya chandrasekar
+      <p className=" text-5xl max-lg:text-4xl max-md:text-3xl max-sm:text-2xl font-semibold max-md:mb-2 mb-4 max-sm:mb-2">
+        Surya Chandrasekar
       </p>
-      <p className=" text-5xl  max-lg:text-4xl max-md:text-3xl font-semibold mb-4  max-sm:text-xl max-md:mb-2 ">
+      <p className=" text-5xl  max-lg:text-4xl max-md:text-3xl font-semibold mb-4  max-sm:text-xl max-md:mb-4 max-sm:mb-2">
         Frontend developer & UI enthuasist
       </p>
 

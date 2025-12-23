@@ -25,7 +25,7 @@ const Experience = () => {
         </div>
 
         {/* --- 1: Experience Card (Left) --- */}
-        <div className="relative flex items-center sm:mb-28 max-sm:mb-8">
+        <div className="relative flex items-center sm:mb-28 max-sm:mb-15">
           {/* Line Adjust for dot */}
           {/* <div className="absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-black border-2 border-blue-400 flex items-center justify-center">
             <div className="w-2 h-2 rounded-full bg-blue-400 shadow-[0_0_12px_#3b82f6]"></div>

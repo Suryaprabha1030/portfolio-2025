@@ -20,10 +20,10 @@ const Project = () => {
   ];
   return (
     <div className="w-3/4 max-md:w-[30rem] max-sm:w-full  xl:max-2xl:w-4/5  xl:h-[90vh] h-auto text-white  flex flex-col items-center max-sm:px-2 max-md:px-3 2xl:px-6 sm:py-20 max-sm:pt-15 ">
-      <h1 className="text-5xl font-semibold mb-10 max-sm:text-xl">
-        My Project
+      <h1 className="text-5xl font-semibold max-sm:mb-5 mb-10 max-sm:text-xl">
+        My Project&apos;s
       </h1>
-      <div className="grid grid-cols-2 max-xl:grid-cols-1 max-md:items-center max-sm:flex max-sm:flex-col max-sm:grid-cols-1  xl:gap-20 max-xl:gap-15 ">
+      <div className="grid grid-cols-2 max-xl:grid-cols-1 max-md:items-center max-sm:flex max-sm:flex-col max-sm:grid-cols-1 max-sm:gap-15 xl:gap-20 max-xl:gap-15 ">
         <div className="w-[30rem] xl:max-2xl:w-[29.5rem] max-sm:w-[20rem] xl:h-[25rem] pb-4 shadow bg-black/20 backdrop-blur-lg  rounded-lg">
           <div className="w-full h-[14rem] rounded-lg">
             <ImageCarousel

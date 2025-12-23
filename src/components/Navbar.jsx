@@ -69,7 +69,7 @@ export default function Navbar() {
       <h1 className="text-2xl max-sm:text-xl">Surya chandrasekar</h1>
       <img
         src={menuIcon}
-        className="w-5 h-5 max-xl:flex xl:hidden"
+        className="w-5 h-5 max-xl:flex xl:hidden text-white"
         onClick={() => setNavOpen(!navOpen)}
       />
       <ul
