@@ -22,11 +22,11 @@ const ImageCarousel = ({ images, autoSlide = true, slideInterval = 3000 }) => {
 
   return (
     <div className="relative w-full max-w-4xl mx-auto">
-      <div className="overflow-hidden rounded-lg">
+      <div className="overflow-hidden rounded-lg bg-white flex items-center w-full justify-center">
         <img
-          src={images[currentIndex]}
-          alt={`Slide ${currentIndex + 1}`}
-          className="w-full h-[14rem] object-fit transition duration-500"
+          src="/thumbnail-4.png"
+          alt="Bike Rental Admin App"
+          className="h-[14rem] w-full object-fit transition duration-500"
         />
       </div>
 

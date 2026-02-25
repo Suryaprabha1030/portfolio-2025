@@ -18,8 +18,20 @@ const Project = () => {
     "/turf7.png",
     // "/cafe4.png",
   ];
+  const rentalCarouselImages = [
+    "/rental1.jpeg",
+    "/rental2.jpeg",
+    "/rental3.jpeg",
+    "/rental4.jpeg",
+    "/rental5.jpeg",
+    "/rentak6.jpeg",
+    "/rental7.jpeg",
+    "/rental8.jpeg",
+
+    // "/cafe4.png",
+  ];
   return (
-    <div className="w-3/4 max-md:w-[30rem] max-sm:w-full  xl:max-2xl:w-4/5  xl:h-[90vh] h-auto text-white  flex flex-col items-center max-sm:px-2 max-md:px-3 2xl:px-6 sm:py-20 max-sm:pt-15 ">
+    <div className="w-3/4 max-md:w-[30rem] max-sm:w-full  xl:max-2xl:w-4/5   h-auto text-white  flex flex-col items-center max-sm:px-2 max-md:px-3 2xl:px-6 sm:py-20 max-sm:pt-15 ">
       <h1 className="text-5xl font-semibold max-sm:mb-5 mb-10 max-sm:text-xl">
         My Project&apos;s
       </h1>
@@ -58,6 +70,7 @@ const Project = () => {
             </a>
           </button>
         </div>
+
         <div className="w-[30rem] xl:h-[25rem] max-sm:w-[20rem] shadow bg-black/20 backdrop-blur-lg  rounded-lg">
           <div className="w-full h-[14rem] bg-white rounded-lg">
             <ImageCarousel
@@ -86,6 +99,42 @@ const Project = () => {
               </a>
             </button>
           </div>
+        </div>
+        <div className="w-[30rem] xl:max-2xl:w-[29.5rem] max-sm:w-[20rem] xl:h-[25rem] pb-4 shadow bg-black/20 backdrop-blur-lg  rounded-lg">
+          <div className="w-full h-[14rem] rounded-lg">
+            <ImageCarousel
+              images={rentalCarouselImages}
+              autoSlide={true}
+              slideInterval={2000}
+            />
+          </div>
+          <div className="flex flex-col justify-center items-start py-4 2xl:py-2  px-4  ">
+            <h1 className="text-lg font-medium pb-2">
+              Bike Rental Admin Mobile App
+            </h1>
+            <p className="text-gray-300 text-[0.8rem]">
+              Built a Bike Rental Admin mobile app with secure authentication,
+              bike and booking management, and income tracking dashboard.
+              Developed APIs using reactNative,Node.js, Express, MongoDB,
+              managed state with Redux Toolkit, and styled using NativeWind.
+            </p>
+          </div>
+
+          <button className="ml-2 px-4  py-1 rounded-full bg-gradient-to-r from-purple-500 to-blue-800 flex items-center gap-3 shadow-lg hover:scale-105 transition">
+            <a
+              href="https://drive.google.com/file/d/1_2egJeaclmTwR5cYwqcSjoV8Ko-xUbi5/view"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="text-md flex flex-row items-center gap-2 font-semibold">
+                {" "}
+                <span className="w-3 h-3 rounded-full bg-white/20 flex items-center justify-center animate-bounce max-sm:hidden">
+                  ⭳
+                </span>
+                <span>Apk</span>
+              </span>
+            </a>
+          </button>
         </div>
       </div>
     </div>
