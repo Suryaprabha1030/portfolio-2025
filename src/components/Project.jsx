@@ -38,10 +38,15 @@ const Project = () => {
       <div className="grid grid-cols-2 max-xl:grid-cols-1 max-md:items-center max-sm:flex max-sm:flex-col max-sm:grid-cols-1 max-sm:gap-15 xl:gap-20 max-xl:gap-15 ">
         <div className="w-[30rem] xl:max-2xl:w-[29.5rem] max-sm:w-[20rem] xl:h-[25rem] pb-4 shadow bg-black/20 backdrop-blur-lg  rounded-lg">
           <div className="w-full h-[14rem] rounded-lg">
-            <ImageCarousel
+            {/* <ImageCarousel
               images={carouselImages}
               autoSlide={true}
               slideInterval={2000}
+            /> */}
+            <img
+              src="/thumb3.png"
+              alt="Bike Rental Admin App"
+              className="h-full w-full  transition duration-500  rounded-t-lg"
             />
           </div>
           <div className="flex flex-col justify-center items-start py-4 2xl:py-2  px-4  ">
@@ -73,10 +78,15 @@ const Project = () => {
 
         <div className="w-[30rem] xl:h-[25rem] max-sm:w-[20rem] shadow bg-black/20 backdrop-blur-lg  rounded-lg">
           <div className="w-full h-[14rem] bg-white rounded-lg">
-            <ImageCarousel
+            {/* <ImageCarousel
               images={turfCarouselImages}
               autoSlide={true}
               slideInterval={2000}
+            /> */}
+            <img
+              src="/thumb1.png"
+              alt="Bike Rental Admin App"
+              className="h-full w-full  transition duration-500  rounded-t-lg"
             />
           </div>
           <div className="flex flex-col justify-center items-start  sm:py-4 max-sm:pt-3 max-sm:mb-3 2xl:py-2   px-4 ">
@@ -102,10 +112,15 @@ const Project = () => {
         </div>
         <div className="w-[30rem] xl:max-2xl:w-[29.5rem] max-sm:w-[20rem] xl:h-[25rem] pb-4 shadow bg-black/20 backdrop-blur-lg  rounded-lg">
           <div className="w-full h-[14rem] rounded-lg">
-            <ImageCarousel
+            {/* <ImageCarousel
               images={rentalCarouselImages}
               autoSlide={true}
               slideInterval={2000}
+            /> */}
+            <img
+              src="/thumb2.png"
+              alt="Bike Rental Admin App"
+              className="h-full w-full  transition duration-500  rounded-t-lg"
             />
           </div>
           <div className="flex flex-col justify-center items-start py-4 2xl:py-2  px-4  ">
