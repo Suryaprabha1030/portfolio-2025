@@ -143,7 +143,7 @@ const Project = () => {
             >
               <span className="text-md flex flex-row items-center gap-2 font-semibold">
                 {" "}
-                <span className="w-3 h-3 rounded-full bg-white/20 flex items-center justify-center animate-bounce max-sm:hidden">
+                <span className="w-3 h-3 rounded-full bg-white/20 flex items-center justify-center animate-bounce">
                   ⭳
                 </span>
                 <span>Apk</span>

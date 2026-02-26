@@ -58,23 +58,32 @@ const App = () => {
           <Navbar />
         </div>
 
-        <section id="about" className="w-full flex flex-col items-center mt-6">
+        <section
+          id="about"
+          className="w-full flex flex-col items-center mt-6 max-sm:px-[2rem]"
+        >
           <Intro />
         </section>
 
         <section
           id="skills"
-          className="w-full flex flex-col items-center xl:mt-[rem]"
+          className="w-full flex flex-col items-center xl:mt-[rem] max-sm:px-[2rem]"
         >
           <Skills />
         </section>
         <section id="project" className="w-full flex flex-col items-center ">
           <Project />
         </section>
-        <section id="experience" className="w-full flex flex-col items-center ">
+        <section
+          id="experience"
+          className="w-full flex flex-col items-center  max-sm:px-[2rem]"
+        >
           <Experience />
         </section>
-        <section id="contact" className="w-full flex flex-col items-center ">
+        <section
+          id="contact"
+          className="w-full flex flex-col items-center max-sm:px-[2rem] "
+        >
           <Contact />
         </section>
         <Footer />
