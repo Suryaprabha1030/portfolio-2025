@@ -151,6 +151,45 @@ const Project = () => {
             </a>
           </button>
         </div>
+        <div className="w-[30rem] xl:max-2xl:w-[29.5rem] max-sm:w-[20rem] xl:h-[25rem] pb-4 shadow bg-black/20 backdrop-blur-lg  rounded-lg">
+          <div className="w-full h-[14rem] rounded-lg">
+            {/* <ImageCarousel
+              images={carouselImages}
+              autoSlide={true}
+              slideInterval={2000}
+            /> */}
+            <img
+              src="/quizwebapp.png"
+              alt="Bike Rental Admin App"
+              className="h-full w-full  transition duration-500  rounded-t-lg"
+            />
+          </div>
+          <div className="flex flex-col justify-center items-start py-4 2xl:py-2  px-4  ">
+            <h1 className="text-lg font-medium pb-2">
+              {" "}
+              QuizCraft AI – AI-powered quiz creation platform
+            </h1>
+            <p className="text-gray-300 text-[0.8rem]">
+              Built an AI-powered quiz platform with Next.js and Supabase.
+              Supports AI-generated and manual quiz creation. Creates unique
+              shareable quiz links. Includes an admin dashboard for quiz
+              management. Tracks participant responses and quiz results.
+              Designed with Tailwind CSS for a responsive UI
+              {/* The platform is optimized for both desktop and mobile, providing a
+              seamless and user-friendly experience. */}
+            </p>
+          </div>
+
+          <button className="ml-2 px-4  py-1 rounded-full bg-gradient-to-r from-purple-500 to-blue-800 flex items-center gap-3 shadow-lg hover:scale-105 transition">
+            <a
+              href="https://quiz-creater.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="text-md font-semibold">Demo</span>
+            </a>
+          </button>
+        </div>
       </div>
     </div>
   );
