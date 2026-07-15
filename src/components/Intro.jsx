@@ -27,7 +27,7 @@ const Intro = () => {
       {/* Email Input + Join Button */}
 
       {/* Talk to Path AI button */}
-      <a href="/suryaprabha.pdf" download>
+      <a href="/surya c.pdf" download>
         <button className="mt-10 px-6 py-4 rounded-full max-sm:py-2 cursor-pointer  bg-gradient-to-r from-purple-500 to-blue-800 flex items-center gap-3 shadow-lg hover:scale-105 transition">
           <div className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center animate-bounce max-sm:hidden">
             ⭳
